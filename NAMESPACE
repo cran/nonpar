@@ -1,0 +1,7 @@
+importFrom("methods", "new", "representation", "setClass", "setMethod")
+importFrom("stats", "binom.test", "median", "pchisq", "pnorm", "pt",
+             "qbinom", "qnorm", "var")
+
+
+exportPattern("^[[:alpha:]]+")
+

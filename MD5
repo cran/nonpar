@@ -1,0 +1,12 @@
+a44e240c4068af6d0ae0bb60e5875a4f *DESCRIPTION
+e819f42eedefafe38d65fb05016f4767 *NAMESPACE
+456e569b971f7b648ad3678215af3c15 *R/cochrans.q.R
+cac00f0a1f28bddbd47ea2dfbd9b55d8 *R/mediantest.R
+fc2022cdadc55c1eb0335ff8e80f4dd2 *R/miller.jack.R
+9485f20504565c4922a52766411f600f *R/signtest.R
+e4766e79d5d22be7ee3488d7000447f0 *R/stuart.maxwell.R
+a019c3d208c6ae7df46806512b1b9dad *man/cochrans.q.Rd
+34618f83fb6b1065286ccae4105357a2 *man/mediantest.Rd
+73bbb252aa9f86c9649d174f2c61c7cb *man/miller.jack.Rd
+5e160b5d5afad45d215f9d95b2ea9ed4 *man/signtest.Rd
+cf2e9d593f11ec354cde27e9edc8acd6 *man/stuart.maxwell.Rd

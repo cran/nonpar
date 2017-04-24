@@ -37,10 +37,10 @@ stuart.maxwell <- function(X, alpha = NULL){
 
   interpretation = character()
   if(p < alpha){
-    interpretation = "There is enough evidence to conclude that there is a difference in the distribution between groups."
+    interpretation = "There is enough evidence to conclude that there is a difference in the distribution between the paired groups."
   }
   else{
-    interpreation = "There is not enough evidence to conclude that there is a difference in the distribution between groups."
+    interpreation = "There is not enough evidence to conclude that there is a difference in the distribution between the paired groups."
   }
 
   setClass("output",
@@ -55,8 +55,8 @@ stuart.maxwell <- function(X, alpha = NULL){
              pinter="character"), where=topenv(parent.frame())
   )
 
-  display<-new("output", Title="Stuart-Maxwell Test", NHypothesis=paste("H0: There is no difference in the distribution between groups."),
-               AHypothesis=paste("HA: There is a difference in the distribution between groups."),
+  display<-new("output", Title="Stuart-Maxwell Test", NHypothesis=paste("H0: There is no difference in the distribution between the paired groups."),
+               AHypothesis=paste("HA: There is a difference in the distribution between the paired groups."),
                TestStat=paste("Test Statistic =",toString(ts)), DF = paste("Degrees of Freedom =", toString(df)),
                alphalevel = paste("Significance Level =", toString(alpha)),
                PVal=paste("The p-value is ", toString(p)), pinter=interpretation)

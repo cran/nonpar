@@ -1,7 +1,7 @@
 Package: nonpar
 Type: Package
 Title: A Collection of Nonparametric Hypothesis Tests
-Version: 1.0.0
+Version: 1.0.1
 Author: D. Lukke Sweet
 Maintainer: D. Lukke Sweet <dls229@zips.uakron.edu>
 Depends: R (>= 3.3.1)
@@ -16,6 +16,6 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 NeedsCompilation: no
-Packaged: 2017-02-21 00:53:34 UTC; Lukke
+Packaged: 2017-04-24 15:25:57 UTC; Lukke
 Repository: CRAN
-Date/Publication: 2017-02-21 08:02:43
+Date/Publication: 2017-04-24 16:14:14 UTC

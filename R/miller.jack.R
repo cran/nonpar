@@ -69,13 +69,13 @@ miller.jack <- function(x, y, alpha = NULL, alternative =c("two.sided", "greater
     interpretation = character()
     if(p < alpha){
       interpretation = switch(alternative, two.sided=paste("There is enough evidence to conclude that the population varicances are different at a significance level of ", toString(alpha), "."),
-                              less=paste("There is enough evidence to conclude that the population variance of sample 1 is less than sample 2 at a significance level of ", toString(alpha), "."),
-                              greater=paste("There is enough evidence to conclude that the population variance of sample 1 is greater than sample 2 at a significance level of ", toString(alpha), "."))
+                              less=paste("There is enough evidence to conclude that the population variance of population 1 is less than population 2 at a significance level of ", toString(alpha), "."),
+                              greater=paste("There is enough evidence to conclude that the population variance of population 1 is greater than population 2 at a significance level of ", toString(alpha), "."))
     }
     else {
       interpretation= switch(alternative, two.sided=paste("There is not enough evidence to conclude that the population variances are different at a significance level of ", toString(alpha), "."),
-                             less=paste("There is not enough evidence to conclude that the population variance of sample 1 is less than sample 2 at a significance level of ", toString(alpha), "."),
-                             greater=paste("There is not enough evidence to conclude that the population variance of sample 1 is greater than sample 2 at a significance level of ", toString(alpha), "."))
+                             less=paste("There is not enough evidence to conclude that the population variance of population 1 is less than population 2 at a significance level of ", toString(alpha), "."),
+                             greater=paste("There is not enough evidence to conclude that the population variance of population 1 is greater than population 2 at a significance level of ", toString(alpha), "."))
     }
     setClass("output",
              representation(
@@ -90,7 +90,7 @@ miller.jack <- function(x, y, alpha = NULL, alternative =c("two.sided", "greater
     if(n<20 || isTRUE(exact)){
       display<-new("output", Title="Miller's Jackknife Procedure", NHypothesis=paste("H0: The population variances are equal."),
                    AHypothesis=switch(alternative, two.sided=paste("HA: The population variances are not equal."),
-                                      less = paste("HA: The variace of population 1 is less than population 2."),
+                                      less = paste("HA: The variance of population 1 is less than population 2."),
                                       greater = paste("HA: The variance population 1 is greater than population 2.")),
                                       TestStat=paste("J =",toString(J)), siglevel = paste("Significance Level =", toString(alpha)),
                                       PVal=paste("The p-value is ", toString(p)), pinter=interpretation)
